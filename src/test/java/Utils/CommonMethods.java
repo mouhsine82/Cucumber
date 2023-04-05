@@ -1,6 +1,7 @@
 package Utils;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -32,7 +33,17 @@ public class CommonMethods {
         driver.get(ConfigReader.getPropertyValue("url"));
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(Constants.WAIT_TIME));
     }
-    public static void closeBrowser(){
+    public static void closeBrowser(){  // method for close browser
         driver.close();
     }
+
+    public static void doClick(WebElement element){  // method for .click()
+        element.click();
+    }
+
+    public static void sendText(WebElement element, String text ){ // method to send text to text box
+        element.clear();  // to clear text box b4 sending text
+        element.sendKeys(text);
+    }
+
 }
