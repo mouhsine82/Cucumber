@@ -1,7 +1,9 @@
 package StepDefinitions;
 
+import Pages.AddEmpPage;
 import Utils.CommonMethods;
 import Utils.ConfigReader;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -37,5 +39,17 @@ public class AddEmployee extends CommonMethods {
     public void user_clicks_on_save_button() {
        WebElement saveBtn=driver.findElement(By.id("btnSave"));
        doClick(saveBtn);
+    }
+
+    @When("user add {string}, {string} and {string}")
+    public void user_add_and(String firstName, String middleName, String lastName) {
+        AddEmpPage emp1=new AddEmpPage();
+        sendText(emp1.addEmpFirstName, firstName);
+        sendText(emp1.addEmpMiddleName, middleName);
+        sendText(emp1.addEmpLastName, lastName);
+    }
+    @Then("clicks on save button")
+    public void clicks_on_save_button() {
+
     }
 }

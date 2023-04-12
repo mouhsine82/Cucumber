@@ -1,0 +1,17 @@
+ # Hooks: for defining pre- and post-steps in any cucumber framework
+    # Hooks is always created inside the StepDefinitions folder
+    # Hooks class never will be inherited
+
+      #-----------------Cucumber itself provides multiple option through which we can feed data from
+       # feature file into Step Definition---------------------------------------------
+       #3. Regular Expressions
+           # put the data in double quotes [""]
+      # Scenario outline: provide an alternative to Data driven testing, also supports parametrization
+
+      #=============================PARAMETERIZATION===================================
+      #Executing the same test case with multiple data
+      - if you want to use parameterization
+      - If you wish to implement data driven testing
+      - Scenario outline is always used along with keyword 'Examples'
+
+      ==> data Table
