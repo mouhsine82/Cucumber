@@ -1,6 +1,6 @@
 Feature: Login Functionalities
 
-  @smoke
+  @smoke3
   Scenario: Valid Admin login
     # Given open the browser and launch HRMS application  (No need this line coz we did pre condition in hook class)
     When user enters valid email and valid password
@@ -42,6 +42,12 @@ Feature: Login Functionalities
       | admin    | Hum@nhrm123 |
       | ADMIN    | Hum@nhrm123 |
       | Jason    | Hum@nhrm123 |
+
+        #Cucumber Expression [ limited set of test data]
+    #Scenario Outline    [Parametrization],[Data Driven Testing][Browser will open and close number of times we have test data in Examples table]
+    #data Table
+
+    # Page Object Model : An object Repository [ It stores or holds all the webElements specific to a particular page]
 
 
 

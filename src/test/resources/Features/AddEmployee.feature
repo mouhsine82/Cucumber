@@ -12,15 +12,7 @@ Feature: Employee
     And user clicks on save button
    # And Close the browser
 
-  @testcase3
-  Scenario Outline: adding new employees
-    When user add "<firstName>", "<middleName>" and "<lastname>"
-    Then clicks on save button
-    Examples:
-    | firstName | middleName | lastName |
-    | Mo        | B          |Bob       |
-    |Sam        |J           |Smith     |
-    |Tom        |M           |Jhon      |
+
 
 
 

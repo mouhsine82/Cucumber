@@ -11,7 +11,7 @@ public class LoginPage extends CommonMethods {
     //QA's write all the locators of the page in respective class
 
     public LoginPage() {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(driver, this); // initializing the webElements of the current page
     }
 
     @FindBy(id="txtUsername")
