@@ -29,7 +29,7 @@ public class AddEmployee extends CommonMethods {
 
     @When("user enters firstname and middlename and lastname")
     public void user_enters_firstname_and_middlename_and_lastname() {
-
+        //System.out.println(10/0);
         sendText(addEmployeePage.firstnameTextBox, ConfigReader.getPropertyValue("firstname"));
 
         sendText(addEmployeePage.middlenameTextBox, ConfigReader.getPropertyValue("middlename"));

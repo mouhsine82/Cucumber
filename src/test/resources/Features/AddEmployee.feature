@@ -7,7 +7,6 @@ Feature: Employee
 
   @testcase2 @smoke
   Scenario: Adding a new Employee
-
     And user enters firstname and middlename and lastname
     And user clicks on save button
    # And Close the browser
