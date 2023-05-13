@@ -15,3 +15,5 @@
       - Scenario outline is always used along with keyword 'Examples'
 
       ==> data Table
+
+      =================================== JAVA DATABASE CONNECTION =================================================
