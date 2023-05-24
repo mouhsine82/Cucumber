@@ -19,9 +19,9 @@ public class DataBaseUtility {
 
         try {
             conn = DriverManager.getConnection(
-                    ConfigReader.getPropertyValue("dbUrl"),
-                    ConfigReader.getPropertyValue("dbUsername"),
-                    ConfigReader.getPropertyValue("dbPassword"));
+                    ConfigReader.getPropertyValue("urldb"),
+                    ConfigReader.getPropertyValue("usernamedb"),
+                    ConfigReader.getPropertyValue("passworddb"));
 
             statement = conn.createStatement();
             resultSet = statement.executeQuery(sqlQuery);
