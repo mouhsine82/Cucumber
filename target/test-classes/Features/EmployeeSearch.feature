@@ -14,7 +14,7 @@ Feature: Searching the employee
     And user see employee information is displayed
     #And Close the browser
 
-    @sanity
+    @sanity2
   Scenario: Search Employee by Job Title
     #Given open the browser and launch HRMS application
    # When user enters valid email and valid password
